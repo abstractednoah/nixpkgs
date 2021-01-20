@@ -1207,6 +1207,8 @@ in {
 
   caldav = callPackage ../development/python-modules/caldav { };
 
+  cambrinary = callPackage ../applications/misc/cambrinary { };
+
   can = callPackage ../development/python-modules/can { };
 
   canmatrix = callPackage ../development/python-modules/canmatrix { };
