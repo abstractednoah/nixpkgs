@@ -1,4 +1,4 @@
-{ buildPythonApplication
+{ buildPythonPackage
 , lib
 , fetchFromGitHub
 , dateutil
@@ -13,7 +13,8 @@
 , setuptools
 , withPcap ? true, dpkt ? null, dnslib ? null
 }:
-buildPythonApplication rec {
+
+buildPythonPackage rec {
   pname = "visidata";
   version = "2.2.1";
 

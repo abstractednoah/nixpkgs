@@ -8931,8 +8931,7 @@ in
 
   vimwiki-markdown = python3Packages.callPackage ../tools/misc/vimwiki-markdown { };
 
-  visidata = (newScope python3Packages) ../applications/misc/visidata {
-  };
+  visidata = with python3Packages; toPythonApplication visidata;
 
   vit = callPackage ../applications/misc/vit { };
 
